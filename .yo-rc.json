@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.tfg.bookmanagerrmh2",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.8.1",
+    "applicationType": "monolith",
+    "baseName": "bookmanagerrmh2",
+    "packageName": "com.tfg.bookmanagerrmh2",
+    "packageFolder": "com/tfg/bookmanagerrmh2",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OGFlM2U4NzRkNTczMTNmNTE5OWI0Y2NkZTA5OWU2YWM4MzAxYmIxZTAwODlkYTYwY2Y5ZTI5NjNhZGQyZWIxNWFiZTlmZTMxYjE5ZDY4YzQ4ZjJiZDFiNTQyMjkxY2Y4M2Y1MGExNThhNjBjMjVhMDYzM2EwM2VjYWUyMmM3Mjg=",
+    "clientFramework": "react",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "es"]
+  }
+}
