@@ -1,0 +1,10 @@
+{
+  "bookmanagerrmh2App": {
+    "Genre": {
+      "null": "",
+      "MALE": "MALE",
+      "FEMALE": "FEMALE",
+      "OTHER": "OTHER"
+    }
+  }
+}

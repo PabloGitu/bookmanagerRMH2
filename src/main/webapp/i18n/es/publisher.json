@@ -1,0 +1,24 @@
+{
+  "bookmanagerrmh2App": {
+    "publisher": {
+      "home": {
+        "title": "Publishers",
+        "createLabel": "Crear nuevo Publisher",
+        "createOrEditLabel": "Crear o editar Publisher"
+      },
+      "created": "Un nuevo Publisher ha sido creado con el identificador {{ param }}",
+      "updated": "Un Publisher ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Publisher ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Publisher {{ id }}?"
+      },
+      "detail": {
+        "title": "Publisher"
+      },
+      "name": "Name",
+      "distribution": "Distribution",
+      "localization": "Localization",
+      "book": "Book"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+// JDL definition for application 'bookmanageragmsql' generated with command 'jhipster export-jdl'
+
+entity Author {
+  name String required,
+  genre Genre required,
+  birthdate LocalDate required,
+  deathDate LocalDate,
+  country String,
+  image ImageBlob
+}
+entity Book {
+  title String required,
+  description String required minlength(10),
+  publicationDate LocalDate required,
+  price BigDecimal required,
+  bookCover BookCover required,
+  genre BookGenre required,
+  isBestSeller Boolean required,
+  image ImageBlob
+}
+entity Comment {
+  userName String required,
+  description String required maxlength(300)
+}
+entity Publisher {
+  name String required,
+  distribution Distribution,
+  localization String
+}
+
+enum Genre {
+  MALE,
+  FEMALE,
+  OTHER
+}
+
+enum BookCover {
+  SOFT,
+  HARD
+}
+
+enum BookGenre {
+  THRILLER,
+  ROMANTIC,
+  ADVENTURE,
+  SCARY,
+  SCIENCEFICTION,
+  CHILD,
+  POLICY,
+  SOCIETY,
+  OTHER
+}
+
+enum Distribution {
+  WORLDWIDE,
+  REGIONAL
+}
+
+relationship OneToMany {
+  Author{books} to Book{author(name) required},
+  Publisher{book} to Book{publisher(name) required},
+  Book{comments} to Comment{book(title) required}
+}
+
+paginate Author, Book, Comment, Publisher with infinite-scroll
+service Author, Book, Comment, Publisher with serviceClass

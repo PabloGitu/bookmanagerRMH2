@@ -1,0 +1,16 @@
+{
+  "bookmanagerrmh2App": {
+    "BookGenre": {
+      "null": "",
+      "THRILLER": "THRILLER",
+      "ROMANTIC": "ROMANTIC",
+      "ADVENTURE": "ADVENTURE",
+      "SCARY": "SCARY",
+      "SCIENCEFICTION": "SCIENCEFICTION",
+      "CHILD": "CHILD",
+      "POLICY": "POLICY",
+      "SOCIETY": "SOCIETY",
+      "OTHER": "OTHER"
+    }
+  }
+}
