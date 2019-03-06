@@ -33,6 +33,8 @@
     "otherModules": [],
     "enableTranslation": true,
     "nativeLanguage": "en",
-    "languages": ["en", "es"]
+    "languages": ["en", "es"],
+    "herokuAppName": "bookmanager-emh-2",
+    "herokuDeployType": "git"
   }
 }
