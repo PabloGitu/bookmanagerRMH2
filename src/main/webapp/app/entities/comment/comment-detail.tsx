@@ -53,14 +53,12 @@ export class CommentDetail extends React.Component<ICommentDetailProps> {
             </span>
           </Button>
           &nbsp;
-          {isAdmin && (
-            <Button tag={Link} to={`/entity/comment/${commentEntity.id}/edit`} replace color="primary">
-              <FontAwesomeIcon icon="pencil-alt" />{' '}
-              <span className="d-none d-md-inline">
-                <Translate contentKey="entity.action.edit">Edit</Translate>
-              </span>
-            </Button>
-          )}
+          <Button tag={Link} to={`/entity/comment/${commentEntity.id}/edit`} replace color="primary">
+            <FontAwesomeIcon icon="pencil-alt" />{' '}
+            <span className="d-none d-md-inline">
+              <Translate contentKey="entity.action.edit">Edit</Translate>
+            </span>
+          </Button>
         </Col>
       </Row>
     );

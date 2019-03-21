@@ -123,7 +123,6 @@ public class CommentResourceIntTest {
         List<Comment> commentList = commentRepository.findAll();
         assertThat(commentList).hasSize(databaseSizeBeforeCreate + 1);
         Comment testComment = commentList.get(commentList.size() - 1);
-        assertThat(testComment.getUserName()).isEqualTo(DEFAULT_USER_NAME);
         assertThat(testComment.getDescription()).isEqualTo(DEFAULT_DESCRIPTION);
     }
 

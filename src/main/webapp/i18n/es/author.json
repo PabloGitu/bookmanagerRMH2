@@ -2,26 +2,27 @@
   "bookmanagerrmh2App": {
     "author": {
       "home": {
-        "title": "Authors",
-        "createLabel": "Crear nuevo Author",
-        "createOrEditLabel": "Crear o editar Author"
+        "title": "Autores",
+        "createLabel": "Crear nuevo autor",
+        "createOrEditLabel": "Crear o editar autor"
       },
-      "created": "Un nuevo Author ha sido creado con el identificador {{ param }}",
-      "updated": "Un Author ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Author ha sido eliminado con el identificador {{ param }}",
+      "created": "Un nuevo autor ha sido creado con el identificador {{ param }}",
+      "updated": "Un autor ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un autor ha sido eliminado con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Author {{ id }}?"
+        "question": "¿Seguro que quiere eliminar al autor {{ id }}?"
       },
       "detail": {
-        "title": "Author"
+        "title": "Autor"
       },
-      "name": "Name",
-      "genre": "Genre",
-      "birthdate": "Birthdate",
-      "deathDate": "Death Date",
-      "country": "Country",
-      "image": "Image",
-      "books": "Books"
+      "name": "Nombre",
+      "genre": "Género",
+      "birthdate": "Fecha de nacimiento",
+      "deathDate": "Fecha de fallecimiento",
+      "country": "País",
+      "image": "Imagen",
+      "books": "Libros",
+      "booksOf": "Libros de"
     }
   }
 }

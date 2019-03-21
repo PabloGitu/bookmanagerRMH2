@@ -25,7 +25,8 @@
       "image": "Image",
       "comments": "Comments",
       "author": "Author",
-      "publisher": "Publisher"
+      "publisher": "Publisher",
+      "commentsOf": "Comments of"
     }
   }
 }

@@ -2,22 +2,22 @@
   "bookmanagerrmh2App": {
     "comment": {
       "home": {
-        "title": "Comments",
-        "createLabel": "Crear nuevo Comment",
-        "createOrEditLabel": "Crear o editar Comment"
+        "title": "Comentarios",
+        "createLabel": "Escribir nuevo comentario",
+        "createOrEditLabel": "Escribir o editar comentario"
       },
-      "created": "Un nuevo Comment ha sido creado con el identificador {{ param }}",
-      "updated": "Un Comment ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Comment ha sido eliminado con el identificador {{ param }}",
+      "created": "Un nuevo comentario ha sido creado con el identificador {{ param }}",
+      "updated": "Un comentario ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un comentario ha sido eliminado con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Comment {{ id }}?"
+        "question": "¿Seguro que quiere eliminar el comentario {{ id }}?"
       },
       "detail": {
-        "title": "Comment"
+        "title": "Comentario"
       },
-      "userName": "User Name",
-      "description": "Description",
-      "book": "Book"
+      "userName": "Nombre del ususario",
+      "description": "Descripción",
+      "book": "Libro"
     }
   }
 }

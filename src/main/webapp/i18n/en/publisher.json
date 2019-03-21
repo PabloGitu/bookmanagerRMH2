@@ -18,7 +18,8 @@
       "name": "Name",
       "distribution": "Distribution",
       "localization": "Localization",
-      "book": "Book"
+      "book": "Book",
+      "booksOf": "Books of"
     }
   }
 }

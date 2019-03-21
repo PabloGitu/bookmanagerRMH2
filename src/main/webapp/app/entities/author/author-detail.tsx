@@ -42,7 +42,9 @@ export class AuthorDetail extends React.Component<IAuthorDetailProps> {
             </dt>
             <dd>{authorEntity.genre}</dd>
             <td>
-              <Link to={`/entity/book/author/${authorEntity.id}`}>Books of {authorEntity.name}</Link>
+              <Link to={`/entity/book/author/${authorEntity.id}`}>
+                <Translate contentKey="bookmanagerrmh2App.author.booksOf">Books of </Translate> {authorEntity.name}
+              </Link>
             </td>
             <dt>
               <span id="birthdate">

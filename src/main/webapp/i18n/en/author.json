@@ -21,7 +21,8 @@
       "deathDate": "Death Date",
       "country": "Country",
       "image": "Image",
-      "books": "Books"
+      "books": "Books",
+      "booksOf": "Books of"
     }
   }
 }

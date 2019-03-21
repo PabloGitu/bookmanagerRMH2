@@ -36,7 +36,6 @@ export class Comment extends React.Component<ICommentProps, ICommentState> {
 
   reset = () => {
     this.props.reset();
-    console.log(this.props.match.params.id);
     if (window.location.href.includes('book')) {
       this.setState({ activePage: 1 }, () => {
         this.getEntitiesByBook();
@@ -134,14 +133,6 @@ export class Comment extends React.Component<ICommentProps, ICommentState> {
                             <Translate contentKey="entity.action.view">View</Translate>
                           </span>
                         </Button>
-                        {isAdmin && (
-                          <Button tag={Link} to={`/entity/comment/${comment.id}/edit`} color="primary" size="sm">
-                            <FontAwesomeIcon icon="pencil-alt" />{' '}
-                            <span className="d-none d-md-inline">
-                              <Translate contentKey="entity.action.edit">Edit</Translate>
-                            </span>
-                          </Button>
-                        )}
                         {isAdmin && (
                           <Button tag={Link} to={`/entity/comment/${comment.id}/delete`} color="danger" size="sm">
                             <FontAwesomeIcon icon="trash" />{' '}

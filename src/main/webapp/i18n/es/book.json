@@ -2,30 +2,31 @@
   "bookmanagerrmh2App": {
     "book": {
       "home": {
-        "title": "Books",
-        "createLabel": "Crear nuevo Book",
-        "createOrEditLabel": "Crear o editar Book"
+        "title": "Libros",
+        "createLabel": "Crear nuevo libro",
+        "createOrEditLabel": "Crear o editar libro"
       },
-      "created": "Un nuevo Book ha sido creado con el identificador {{ param }}",
-      "updated": "Un Book ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Book ha sido eliminado con el identificador {{ param }}",
+      "created": "Un nuevo libro ha sido creado con el identificador {{ param }}",
+      "updated": "Un libro ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un libro ha sido eliminado con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Book {{ id }}?"
+        "question": "¿Seguro que quiere eliminar el libro {{ id }}?"
       },
       "detail": {
-        "title": "Book"
+        "title": "Libro"
       },
-      "title": "Title",
-      "description": "Description",
-      "publicationDate": "Publication Date",
-      "price": "Price",
-      "bookCover": "Book Cover",
-      "genre": "Genre",
-      "isBestSeller": "Is Best Seller",
-      "image": "Image",
-      "comments": "Comments",
-      "author": "Author",
-      "publisher": "Publisher"
+      "title": "Título",
+      "description": "Descripción",
+      "publicationDate": "Fecha de publicacion",
+      "price": "Precio",
+      "bookCover": "Tapa",
+      "genre": "Género",
+      "isBestSeller": "Best Seller",
+      "image": "Imagen",
+      "comments": "Comentarios",
+      "author": "Autor",
+      "publisher": "Editorial",
+      "commentsOf": "Comentarios de"
     }
   }
 }

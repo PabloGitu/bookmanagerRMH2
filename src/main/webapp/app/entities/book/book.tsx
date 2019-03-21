@@ -88,11 +88,13 @@ export class Book extends React.Component<IBookProps, IBookState> {
       <div>
         <h2 id="book-heading">
           <Translate contentKey="bookmanagerrmh2App.book.home.title">Books</Translate>
-          <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />
-            &nbsp;
-            <Translate contentKey="bookmanagerrmh2App.book.home.createLabel">Create new Book</Translate>
-          </Link>
+          {isAdmin && (
+            <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
+              <FontAwesomeIcon icon="plus" />
+              &nbsp;
+              <Translate contentKey="bookmanagerrmh2App.book.home.createLabel">Create new Book</Translate>
+            </Link>
+          )}
         </h2>
         <div className="table-responsive">
           <InfiniteScroll
@@ -183,14 +185,6 @@ export class Book extends React.Component<IBookProps, IBookState> {
                             <Translate contentKey="entity.action.view">View</Translate>
                           </span>
                         </Button>
-                        {isAdmin && (
-                          <Button tag={Link} to={`/entity/book/${book.id}/edit`} color="primary" size="sm">
-                            <FontAwesomeIcon icon="pencil-alt" />{' '}
-                            <span className="d-none d-md-inline">
-                              <Translate contentKey="entity.action.edit">Edit</Translate>
-                            </span>
-                          </Button>
-                        )}
                         {isAdmin && (
                           <Button tag={Link} to={`/entity/book/${book.id}/delete`} color="danger" size="sm">
                             <FontAwesomeIcon icon="trash" />{' '}

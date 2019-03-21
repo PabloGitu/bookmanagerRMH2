@@ -70,11 +70,13 @@ export class Publisher extends React.Component<IPublisherProps, IPublisherState>
       <div>
         <h2 id="publisher-heading">
           <Translate contentKey="bookmanagerrmh2App.publisher.home.title">Publishers</Translate>
-          <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />
-            &nbsp;
-            <Translate contentKey="bookmanagerrmh2App.publisher.home.createLabel">Create new Publisher</Translate>
-          </Link>
+          {isAdmin && (
+            <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
+              <FontAwesomeIcon icon="plus" />
+              &nbsp;
+              <Translate contentKey="bookmanagerrmh2App.publisher.home.createLabel">Create new Publisher</Translate>
+            </Link>
+          )}
         </h2>
         <div className="table-responsive">
           <InfiniteScroll
@@ -126,14 +128,6 @@ export class Publisher extends React.Component<IPublisherProps, IPublisherState>
                             <Translate contentKey="entity.action.view">View</Translate>
                           </span>
                         </Button>
-                        {isAdmin && (
-                          <Button tag={Link} to={`${match.url}/${publisher.id}/edit`} color="primary" size="sm">
-                            <FontAwesomeIcon icon="pencil-alt" />{' '}
-                            <span className="d-none d-md-inline">
-                              <Translate contentKey="entity.action.edit">Edit</Translate>
-                            </span>
-                          </Button>
-                        )}
                         {isAdmin && (
                           <Button tag={Link} to={`${match.url}/${publisher.id}/delete`} color="danger" size="sm">
                             <FontAwesomeIcon icon="trash" />{' '}

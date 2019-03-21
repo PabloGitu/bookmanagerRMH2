@@ -70,11 +70,13 @@ export class Author extends React.Component<IAuthorProps, IAuthorState> {
       <div>
         <h2 id="author-heading">
           <Translate contentKey="bookmanagerrmh2App.author.home.title">Authors</Translate>
-          <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />
-            &nbsp;
-            <Translate contentKey="bookmanagerrmh2App.author.home.createLabel">Create new Author</Translate>
-          </Link>
+          {isAdmin && (
+            <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
+              <FontAwesomeIcon icon="plus" />
+              &nbsp;
+              <Translate contentKey="bookmanagerrmh2App.author.home.createLabel">Create new Author</Translate>
+            </Link>
+          )}
         </h2>
         <div className="table-responsive">
           <InfiniteScroll
@@ -152,14 +154,6 @@ export class Author extends React.Component<IAuthorProps, IAuthorState> {
                             <Translate contentKey="entity.action.view">View</Translate>
                           </span>
                         </Button>
-                        {isAdmin && (
-                          <Button tag={Link} to={`${match.url}/${author.id}/edit`} color="primary" size="sm">
-                            <FontAwesomeIcon icon="pencil-alt" />{' '}
-                            <span className="d-none d-md-inline">
-                              <Translate contentKey="entity.action.edit">Edit</Translate>
-                            </span>
-                          </Button>
-                        )}
                         {isAdmin && (
                           <Button tag={Link} to={`${match.url}/${author.id}/delete`} color="danger" size="sm">
                             <FontAwesomeIcon icon="trash" />{' '}

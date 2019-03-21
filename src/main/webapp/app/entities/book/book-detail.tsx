@@ -91,7 +91,9 @@ export class BookDetail extends React.Component<IBookDetailProps> {
               ) : null}
             </dd>
             <td>
-              <Link to={`/entity/comment/book/${bookEntity.id}`}>Comments of {bookEntity.title}</Link>
+              <Link to={`/entity/comment/book/${bookEntity.id}`}>
+                <Translate contentKey="bookmanagerrmh2App.book.commentsOf">Comments of </Translate> {bookEntity.title}
+              </Link>
             </td>
             <dt>
               <Translate contentKey="bookmanagerrmh2App.book.author">Author</Translate>

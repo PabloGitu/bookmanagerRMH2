@@ -48,7 +48,9 @@ export class PublisherDetail extends React.Component<IPublisherDetailProps> {
             </dt>
             <dd>{publisherEntity.localization}</dd>
             <td>
-              <Link to={`/entity/book/publisher/${publisherEntity.id}`}>Books of {publisherEntity.name}</Link>
+              <Link to={`/entity/book/publisher/${publisherEntity.id}`}>
+                <Translate contentKey="bookmanagerrmh2App.publisher.booksOf">Books of</Translate> {publisherEntity.name}
+              </Link>
             </td>
           </dl>
           <Button tag={Link} to="/entity/publisher" replace color="info">
